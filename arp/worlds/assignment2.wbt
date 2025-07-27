@@ -1,0 +1,75 @@
+#VRML_SIM R2023b utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/solids/protos/SolidBox.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/appearances/protos/Parquetry.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/robots/gctronic/e-puck/protos/E-puck.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/animals/protos/Horse.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation 0.12353977712065384 -0.968294695051944 -0.21712509528666102 5.219850703386069
+  position -1.9478135174766997 -0.5454780636567961 3.624598006081343
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  translation 0.04 0 0
+  floorSize 2 2
+  floorAppearance Parquetry {
+    type "light strip"
+  }
+}
+SolidBox {
+  translation 0.26 -0.47 0.05
+  name "box(2)"
+  size 0.3 0.3 0.1
+  appearance PBRAppearance {
+    baseColor 0 1 0
+    roughness 0.5
+    metalness 0
+  }
+  recognitionColors [
+    1 0 0
+  ]
+}
+SolidBox {
+  translation 0.6 0.65 0.05
+  name "box(1)"
+  size 0.3 0.3 0.1
+  appearance PBRAppearance {
+    baseColor 1 0 0
+    roughness 0.5
+    metalness 0
+  }
+  recognitionColors [
+    1 0 0
+  ]
+}
+SolidBox {
+  translation -0.43 -0.37 0.05
+  size 0.3 0.3 0.1
+  appearance PBRAppearance {
+    baseColor 0 0 1
+    roughness 0.5
+    metalness 0
+  }
+  recognitionColors [
+    1 0 0
+  ]
+}
+E-puck {
+  translation -0.310043 0.265395 7.64198e-05
+  rotation -0.0003546819039309013 0.000644918825317363 0.9999997291401913 -1.5972053071795864
+  controller "my_controller"
+}
+Horse {
+  translation -0.505686 0.367693 0
+  rotation 0 0 1 0.785398
+  scale 0.04
+}
